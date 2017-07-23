@@ -1,0 +1,8 @@
+<md-list>
+  <md-list-item *ngFor="let menu of menus" (click)="navigateTo(menu.state)">
+    <h3 md-line>
+      <md-icon md-list-icon>{{menu.icon}}</md-icon>
+      {{ menu.name }}
+    </h3>
+  </md-list-item>
+</md-list>

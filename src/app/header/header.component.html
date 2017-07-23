@@ -1,0 +1,25 @@
+<md-toolbar color="primary">
+  <button md-button (click)="sidenav.toggle()">
+    <md-icon class="example-icon">menu</md-icon>
+  </button>
+  <span class="example-spacer"></span>
+  <span>Dashboard</span>
+</md-toolbar>
+<md-sidenav-container class="example-sidenav-fab-container">
+  <md-sidenav #sidenav mode="push" opened="false">
+    <div class="example-scrolling-content">
+      <app-side-menu></app-side-menu>
+    </div>
+  </md-sidenav>
+  <div class="my-content">
+    <md-progress-bar
+        class="example-margin"
+        [color]="'primary'"
+        [mode]="'query'">
+    </md-progress-bar>
+    <app-high-chart-stacked-column></app-high-chart-stacked-column>
+    <app-high-chart-activity-gauge></app-high-chart-activity-gauge>
+    <app-high-chart-pie-drill-down></app-high-chart-pie-drill-down>
+  </div>
+
+</md-sidenav-container>
