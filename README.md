@@ -1,6 +1,31 @@
-# MyApp
+# Dashboard App
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.1.
+
+# Prerequisites
+
+It require Node 6.9.0 or higher, together with NPM 3 or higher.
+
+Install node
+
+https://nodejs.org/en/download/
+
+Install npm
+
+npm install -g npm
+
+
+Go to project repo
+
+1. npm install (download project specific packages)
+2. npm install -g @angular/cli
+3. ng serve (Run project on node)
+
+
+++++++++++++++++++++++++++++++++++++
+If only build (not required as of now)
+
+ng build
 
 ## Development server
 
