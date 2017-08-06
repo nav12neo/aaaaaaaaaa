@@ -6,17 +6,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./side-menu.component.css']
 })
 export class SideMenuComponent implements OnInit {
-
+    user_name = "John"
     menus = [
       {
         name: 'Home',
         icon:"home",
-        state: "sdsd",
+        state: "home",
       },
       {
         name: 'Dashboard',
-        icon:"home",
-        state: "nmnm"
+        icon:"dashboard",
+        state: "dashboard"
+      },
+      {
+        name: 'Logout',
+        icon:"exit_to_app",
+        state: "logout"
       }
     ];
 

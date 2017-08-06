@@ -12,6 +12,9 @@ export class HighChartActivityGaugeComponent implements OnInit {
     chart: {
       type: 'solidgauge'
     },
+    title: {
+        text: ' '
+    },
     tooltip: {
         borderWidth: 0,
         backgroundColor: 'none',

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Ng2HighchartsModule } from 'ng2-highcharts';
 
 @Component({
@@ -6,65 +6,10 @@ import { Ng2HighchartsModule } from 'ng2-highcharts';
   templateUrl: './high-chart-stacked-column.component.html',
   styleUrls: ['./high-chart-stacked-column.component.css']
 })
-export class HighChartStackedColumnComponent implements OnInit {
-
-  title = 'User Performance';
-  chartData = {
-    chart: {
-      type: 'column'
-    },
-    yAxis: {
-        min: 0,
-        title: {
-            text: 'Total fruit consumption'
-        },
-        stackLabels: {
-            enabled: true,
-            style: {
-                fontWeight: 'bold',
-                color: 'gray'
-            }
-        }
-    },
-    legend: {
-        align: 'right',
-        x: -30,
-        verticalAlign: 'top',
-        y: 25,
-        floating: true,
-        backgroundColor: 'white',
-        borderColor: '#CCC',
-        borderWidth: 1,
-        shadow: false
-    },
-    tooltip: {
-        headerFormat: '<b>{point.x}</b><br/>',
-        pointFormat: '{series.name}: {point.y}<br/>Total: {point.stackTotal}'
-    },
-    plotOptions: {
-        column: {
-            stacking: 'normal',
-            dataLabels: {
-                enabled: true,
-                color: 'white'
-            }
-        }
-    },
-    series: [{
-        name: 'John',
-        data: [5, 3, 4, 7, 2]
-    }, {
-        name: 'Jane',
-        data: [2, 2, 3, 2, 1]
-    }, {
-        name: 'Joe',
-        data: [3, 4, 4, 2, 5]
-    }]
-  };
+export class HighChartStackedColumnComponent {
+   
+   @Input() chartData: any;  
 
   constructor() { }
-
-  ngOnInit() {
-  }
 
 }

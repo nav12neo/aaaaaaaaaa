@@ -1,0 +1,45 @@
+.kpi-bar {
+	display: inline-block;
+	background: #111;
+	width: 100%;
+	float: left;
+    margin: 0;
+    padding: 1em;
+}
+
+.kpi-bar  li {
+	display: inline-block;
+	list-style: none;
+	display:inline-block;
+	padding:1em 3em 0em 3em;
+	border-right: 1px solid #DDD;
+	color: #FFF;
+}
+
+.kpi-bar  li:last-child {
+	border-right: 0;
+}
+
+
+.kpi-bar  li .panel-efficiency{
+	display: block;
+	float: left;
+	font-size: 3em;
+	font-weight: bold;
+
+}
+.kpi-bar  li .panel-label{
+	display: block;
+	text-transform: uppercase;
+}
+.kpi-bar  li.status_purple .panel-efficiency {
+	color: #00aa8d;
+}
+
+.kpi-bar  li.status_green .panel-efficiency{
+	color: #3f51b5;
+}
+
+.kpi-bar  li.status_pink .panel-efficiency{
+	color: #ff4081;
+}

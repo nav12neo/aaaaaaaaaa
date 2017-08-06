@@ -13,7 +13,7 @@ export class HighChartPieDrillDownComponent implements OnInit {
         type: 'pie'
     },
     title: {
-        text: 'Browser market shares. January, 2015 to May, 2015'
+        text: ' '
     },
     subtitle: {
         text: 'Click the slices to view versions. Source: netmarketshare.com.'

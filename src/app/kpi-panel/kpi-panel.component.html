@@ -1,0 +1,8 @@
+<div>
+	<ul class="kpi-bar">
+		<li *ngFor="let panel of kpiPanels" [ngClass]="[panel.class]">
+	      <span class="panel-efficiency">{{panel.efficiency}}</span>
+	      <span class="panel-label">{{panel.label}}</span>
+	    </li>
+    </ul>
+</div>

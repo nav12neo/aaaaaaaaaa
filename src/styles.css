@@ -1,6 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~@angular/material/prebuilt-themes/purple-green.css";
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 html, body, material-app, md-sidenav-container, .my-content {
+  font-family:"Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+  font-size: 12px;
   margin: 0;
   width: 100%;
   height: 100%;

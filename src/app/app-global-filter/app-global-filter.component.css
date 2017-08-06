@@ -1,0 +1,7 @@
+.global-filter {
+    float: left;
+    display: block;
+    width: 96%;
+    text-align: right;
+    padding: 2em 1em;
+}

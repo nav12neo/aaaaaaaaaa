@@ -5,6 +5,11 @@
   <span class="example-spacer"></span>
   <span>Dashboard</span>
 </md-toolbar>
+<div *ngIf="isLoading">
+    <div class="loader-full-page">
+        <md-progress-bar color="warn" mode="indeterminate"></md-progress-bar>
+    </div>
+</div>
 <md-sidenav-container class="example-sidenav-fab-container">
   <md-sidenav #sidenav mode="push" opened="false">
     <div class="example-scrolling-content">
@@ -12,14 +17,13 @@
     </div>
   </md-sidenav>
   <div class="my-content">
-    <md-progress-bar
-        class="example-margin"
-        [color]="'primary'"
-        [mode]="'query'">
-    </md-progress-bar>
-    <app-high-chart-stacked-column></app-high-chart-stacked-column>
-    <app-high-chart-activity-gauge></app-high-chart-activity-gauge>
-    <app-high-chart-pie-drill-down></app-high-chart-pie-drill-down>
+    <div class="dashboard-container" *ngIf="!isLoading">
+        <app-kpi-panel></app-kpi-panel> 
+        <app-global-filter></app-global-filter>
+        <app-high-chart-stacked-column [chartData] = "userChartData"></app-high-chart-stacked-column>
+        <app-high-chart-stacked-column [chartData] = "machineChartData"></app-high-chart-stacked-column>
+        
+    </div>
   </div>
 
 </md-sidenav-container>

@@ -1,0 +1,16 @@
+<div class="global-filter">
+
+<form>
+  <md-select placeholder="Select days" [(ngModel)]="selectedDays" name="days">
+    <md-option *ngFor="let day of days" [value]="day.value">
+      {{day.viewValue}}
+    </md-option>
+  </md-select>
+
+  <md-select placeholder="Select a region" [(ngModel)]="selectedRegion" name="region">
+    <md-option *ngFor="let region of regions" [value]="region.value">
+      {{region.viewValue}}
+    </md-option>
+  </md-select>
+</form>
+</div>
